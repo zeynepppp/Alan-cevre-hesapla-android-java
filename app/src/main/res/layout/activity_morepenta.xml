@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".circle"
+    android:background="@drawable/squarepageback">
+
+    <EditText
+        android:id="@+id/uzunluk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dikmekenari"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Uzunluk"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dikmekenari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dikmeuzunluk"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Merkezden indirilen dikme"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dikmeuzunluk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="178dp"
+        android:ems="10"
+        android:hint="Kenar Uzunluğu"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/kenarsayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:ems="10"
+        android:hint="Kenar Sayısı"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:text="ÇOKGEN"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp" />
+
+    <CheckBox
+        android:id="@+id/cbAlanC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dikmekenari"
+        android:layout_marginBottom="206dp"
+        android:text="Alan" />
+
+    <CheckBox
+        android:id="@+id/cbCevreC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dikmekenari"
+        android:layout_marginBottom="163dp"
+        android:text="Çevre" />
+
+    <CheckBox
+        android:id="@+id/cbHacimC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dikmekenari"
+        android:layout_marginBottom="122dp"
+        android:text="Hacim" />
+
+    <TextView
+        android:id="@+id/tvAlanC"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignBaseline="@+id/cbAlanC"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="174dp"
+        android:text=" "
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvCevreC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAlanC"
+        android:layout_alignTop="@+id/cbCevreC"
+        android:text=" "
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvHacimC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAlanC"
+        android:layout_alignTop="@+id/cbHacimC"
+        android:text=" "
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/angry_btn"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Hesapla"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".circle"
+    android:background="@drawable/squarepageback">
+
+    <EditText
+        android:id="@+id/dikmekenari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="Yükseklik "
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dikmeuzunluk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="202dp"
+        android:ems="10"
+        android:hint="İkinci kenar"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/kenarsayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:ems="10"
+        android:hint="Birinci kenar"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:text="DİKDÖRTGEN"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="34sp" />
+
+    <CheckBox
+        android:id="@+id/cbAlanD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dikmeuzunluk"
+        android:layout_marginBottom="227dp"
+        android:text="Alan" />
+
+    <CheckBox
+        android:id="@+id/cbCevreD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dikmekenari"
+        android:layout_marginBottom="176dp"
+        android:text="Çevre" />
+
+    <CheckBox
+        android:id="@+id/cbHacimD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/dikmekenari"
+        android:layout_marginBottom="122dp"
+        android:text="Hacim" />
+
+    <TextView
+        android:id="@+id/tvAlanD"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_alignBaseline="@+id/cbAlanD"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="148dp"
+        android:text=" "
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvCevreD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAlanD"
+        android:layout_alignTop="@+id/cbCevreD"
+        android:text=" "
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvHacimD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvAlanD"
+        android:layout_alignTop="@+id/cbHacimD"
+        android:text=" "
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_dikdortgen"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Hesapla"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
